@@ -1,15 +1,11 @@
 var Twit = require('twit')
 var fs = require('fs')
-var filteredFollowback = require('filtered-followback');
+var quidprofollow = require('quidprofollow');
 
 
 module.exports = function (config, name, func) {
   var T = new Twit(config)
-  filteredFollowback({twitterCreds: config,
-    neverUnfollow: [
-    ],
-    blacklist: [
-    ]}, function reportResults(err, followed, unfollowed) {
+  quidprofollow({twitterAPIKeys: config}, function reportResults(err, followed, unfollowed) {
     if (err) throw err
     console.log('Followed:', followed);
     console.log('Unfollowed:', unfollowed);
