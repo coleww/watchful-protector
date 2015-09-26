@@ -2,11 +2,6 @@
   "name": "@coleww/watchful-protector",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "tweet": "node bot.js",
-    "test": "standard",
-    "publish": "npm run test && npm publish"
-  },
   "devDependencies": {
     "standard": "4.5.4"
   },
