@@ -1,5 +1,5 @@
 {
-  "name": "@coleww/watchful-protector",
+  "name": "watchful-protector",
   "version": "1.0.1",
   "main": "index.js",
   "devDependencies": {
