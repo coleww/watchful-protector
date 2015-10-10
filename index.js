@@ -1,7 +1,7 @@
 var Twit = require('twit')
 var fs = require('fs')
 var quidprofollow = require('quidprofollow');
-
+var tipots = require('this-is-probably-ok-to-say')
 
 module.exports = function (config, name, func) {
   var T = new Twit(config)
@@ -18,7 +18,7 @@ module.exports = function (config, name, func) {
         console.log('got', data.length, 'tweets')
         data.some(function(tweet){
           console.log(tweet.text)
-          var res = func(tweet)
+          var res = tipots(tweet.text) && func(tweet)
           if (res) {
             console.log('bingo', res)
             T.post('statuses/update', {status: res, in_reply_to_status_id: tweet.id_str}, function (err, data, response) {

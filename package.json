@@ -1,6 +1,6 @@
 {
   "name": "watchful-protector",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "devDependencies": {
     "standard": "4.5.4"
@@ -8,6 +8,7 @@
   "dependencies": {
     "iscool": "^1.1.7",
     "quidprofollow": "^1.2.1",
+    "this-is-probably-ok-to-say": "^1.0.3",
     "twit": "^2.1.0"
   },
   "license": "MIT",
