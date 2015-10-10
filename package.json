@@ -1,6 +1,6 @@
 {
   "name": "watchful-protector",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "devDependencies": {
     "standard": "4.5.4"
